@@ -21,7 +21,7 @@ int main() {
 			green = blue;
 		}
 	}
-	cout << green << "\n";
+	cout << "The Largest number was:" << green << "\n";
 }
 
 /* TODO: read l1.pdf and the first 2 lectures from Prof Li. */
