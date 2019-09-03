@@ -15,7 +15,7 @@ using std::cin;
 /* the main function is where your program starts. */
 int main()
 {
-	cout << "hello class\n";
+	cout << "hello class\n"
 	/* TODO: remove the semicolon, try to compile, take note of the error
 	 * message that will result. */
 	return 0;
