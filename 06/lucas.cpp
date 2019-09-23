@@ -16,6 +16,21 @@ int main()
 	 * any values P,Q.  See the notes in l2.pdf if you need help with
 	 * the idea, but try to write the code from scratch. */
 
+	int n, p, q;
+	cout << "What are the values of P and Q for the Lucas sequence?" << '\n';
+	cin >> p >> q;
+	cout << "What term would you like to find (not including n=1 or n=2): " << '\n';
+	cin >> n;
+	int TwoBefore = p;
+	int oneBefore = q;
+	int nthTerm = 0;
+	while(n>1){
+		nthTerm = TwoBefore + oneBefore;
+		TwoBefore = oneBefore;
+		oneBefore = nthTerm;
+		n--;
+	}
+	cout << "The value of that term is: " << nthTerm << '\n';
 	return 0;
 }
 
