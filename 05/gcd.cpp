@@ -16,12 +16,9 @@ int main()
 	 * */
 	int n,m;
 	cin >> n >> m;
-	int min;
-	if (m < n) {
+	int min = n;
+	if (m < min) {
 		min = m;
-	}
-	else {
-		min = n;
 	}
 	/* TODO: shorten the above by unconditionally assigning to min
 	 * one of the inputs, then checking if you made the right
